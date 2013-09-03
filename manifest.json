@@ -14,7 +14,7 @@
     "128": "icons/icon_128.png"
   },
 
-  "omnibox": { "keyword" : "unity" },
+  "omnibox": { "keyword" : "unitydoc" },
   "permissions": [ "tabs", "http://docs.unity3d.com/" ],
   "minimum_chrome_version": "9",
   
