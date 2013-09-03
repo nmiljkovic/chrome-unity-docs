@@ -25,9 +25,9 @@
       margin: 0 auto;
     }
 
-    .anim_target {
+    .anim_target, .anim_fallback {
       width: 874px;
-      height: 260px;
+      height: 287px;
       position: relative;
       overflow: hidden;
     }
@@ -47,8 +47,8 @@
       <span>Google Chrome extension for Unity&reg; scripting reference</span>
     </h2>
 
-    <canvas id="anim_target" class="anim_target" width="874" height="260">
-    <div id="anim_fallback" class="anim_target" style="width: 874px; height: 260px; position: relative;">
+    <canvas id="anim_target" class="anim_target" width="874" height="287">
+    <div id="anim_fallback" class="anim_target" style="width: 874px; height: 287px; position: relative;">
       <img src="unity_anim_fallback.png">
     </div>
     </canvas> 
@@ -72,6 +72,30 @@
       </li>
       <li>
         Start using it!
+      </li>
+    </ol>
+
+    <h2>Changing the keyword</h2>
+
+    <p>
+      The default keyword for search is `unitydoc`. If that's a problem for you, you can easily change it to whatever you'd like.
+    </p>
+
+    <ol>
+      <li>
+        Go to the directory where the extension has been unpacked and open <strong>manifest.json</strong>
+      </li>
+      <li>
+        Find the line that reads:
+        <pre><code>"omnibox": { "keyword" : "unitydoc" }</code></pre>
+      </li>
+      <li>
+        Change the keyword under quotes from <strong>unitydoc</strong> to something else and restart Chrome
+      </li>
+      <li>
+        <em>(optional)</em> If you don't want to restart chrome, you can just reload the extension
+        from <strong>Tools</strong> > <strong>Extensions</strong>. Find <strong>Unity Documentation</strong>,
+        click on the <strong>Reload</strong> link and enjoy
       </li>
     </ol>
 
