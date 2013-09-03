@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Unity Documentation",
+  "description": "Easily search through Unity3D documentation using the omnibox.",
+  "version": "1.0",
+  "author": "Nemanja Miljković (proof1337@gmail.com)",
+  "homepage_url": "http://proof.github.com/chrome-unity-docs",
+  "incognito": "spanning",
+
+  "icons": {
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+
+  "omnibox": { "keyword" : "unity" },
+  "permissions": [ "tabs", "http://docs.unity3d.com/" ],
+  "minimum_chrome_version": "9",
+  
+  "background": {
+    "page": "omnibox.html"
+  }
+}
