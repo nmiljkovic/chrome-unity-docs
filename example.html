@@ -31,6 +31,10 @@
       position: relative;
       overflow: hidden;
     }
+
+    .unity_logo {
+      margin-bottom: 10px;
+    }
   </style>
 
 </head>
@@ -40,20 +44,43 @@
   <div class="container">
     <h2 class="header">
       <img class="unity_logo" src="unity_logo.png" alt="Unity">
-      <span>Google Chrome extension for fast documentation reference</span>
+      <span>Google Chrome extension for Unity&reg; scripting reference</span>
     </h2>
 
-    <canvas id="anim_target" class="anim_target" width="874" height="440">
+    <canvas id="anim_target" class="anim_target" width="874" height="260">
     <div id="anim_fallback" class="anim_target" style="width: 874px; height: 260px; position: relative;">
       <img src="unity_anim_fallback.png">
     </div>
     </canvas> 
 
     <h2>Installation</h2>
-  </div>
 
-  <div>
-    
+    <p>The extension is not available in the Google Chrome Web Store yet, so you'll have to do things manually:</p>
+
+    <ol>
+      <li>
+        Download the zipped extension from <a href="https://github.com/proof/chrome-unity-docs/archive/master.zip">GitHub</a>.
+      </li>
+      <li>
+        Unzip the archive to some directory, for example <strong>c:/unity-docs/</strong>.
+      </li>
+      <li>
+        In Google Chrome, go to <strong>Tools</strong> > <strong>Extensions</strong> and enable <strong>Developer Mode</strong>.
+      </li>
+      <li>
+        Click on <strong>Load unpacked extension...</strong> and select the folder you unpacked the archive. (<strong>c:/unity-docs/</strong>)
+      </li>
+      <li>
+        Start using it!
+      </li>
+    </ol>
+
+    <p>
+      <small>
+        Unity&reg; and the Unity&reg; logo are registered trademarks of Unity Technologies.
+        This extension is not a product of Unity Technologies.
+      </small>
+    </p>
   </div>
 
 <script type="text/javascript" src="unity_docs_anim.js"></script>
